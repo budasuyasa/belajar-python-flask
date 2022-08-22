@@ -1,0 +1,118 @@
+<!-- Ini adalah komentar -->
+<html>
+    <head>
+        <title>Belajar HTML Dasar</title>
+        <style>
+            /* selector h1 */
+            h1 {
+                color: rgb(59, 205, 122); /* 0 - 255 */
+                font-size: 100px;
+            }
+            h2 {
+                color: blue;
+            }
+
+            /* styling attribute class */
+            .garisbawah {
+                text-decoration: underline;
+            }
+
+            /* styling attribute id */
+            #h1biru {
+                color: blue;   
+            }
+
+            #paragraph_miring {
+                font-style: italic;
+            }
+
+            div {
+                /* menambahkan garis hitam dan solid /*
+                border: 1px solid black;
+                /* menambahkan jarak antara text dan garis */
+                padding: 10px;
+                /* menambahkan warna latar */
+                background-color: red;
+                /* membuat warna teks */
+                color: white;
+                /* membuat font tebal */
+                font-weight: bold;
+            }
+            form {
+                /* Mengatur tampilan menjadi vertical */
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- tag h1-h6 untuk membuat headline dengan ukuran paling besar ke kecil -->
+        <h1>Biodata</h1>
+        <h2>Tentang Saya</h2>
+        <h3>Biodata Singkat</h3>
+        <h4>Mantaps</h4>
+        <h5>Oke</h5>
+        <h6>SIP</h6>
+        <!-- Tag p untuk membuat paragrap -->
+        <p>
+            Halo, nama saya satya. Saya berumur 14 tahun
+            Saya bersekolah di SMP 2 Kuta Utara
+        </p>
+        <p id="paragraph_miring">
+            Saya sedang belajar Python di Axcelio
+        </p>
+
+        <!-- tag img untuk menampilkan gambar -->
+        <img width="400" src="https://asset.kompas.com/crops/SV5q4gPkeD8YJTuzO31BqTr9DEI=/192x128:1728x1152/750x500/data/photo/2021/03/06/60436a28b258b.jpg" />
+
+        <!-- tag a untuk menghubungkan 1 halaman ke halaman lainnya -->
+        <a href="/tentang-saya">Ke halaman tentang saya</a>
+
+        <!-- unordered list -->
+        <ul>
+            <li>Rebus Air</li>
+            <li>Siapkan bumbu</li>
+            <li>Masak mie</li>
+            <li>Tiriskan mie</li>
+            <li>Aduk mie</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol type="i">
+            <li>Rebus Air</li>
+            <li>Siapkan bumbu</li>
+            <li>Masak mie</li>
+            <li>Tiriskan mie</li>
+            <li>Aduk mie</li>
+        </ol>
+
+        <div>
+           Halo apa kabar
+        </div>
+
+        <form>
+            <!-- menambah input form bertipe teks -->
+            <label for="nama">Nama</label>
+            <input id="nama" type="text" name="nama">
+            <!-- input form bertipe password -->
+            <label for="sandi">Sandi</label>
+            <input id="sandi" type="password" name="password" />
+
+            <input type="checkbox" id="checkbox_setuju"> <label for="checkbox_setuju"> Setuju?</label>
+
+            <label for="select_buah" >Pilih Buah</label>
+            <select id="select_buah">
+                <option>Cabe</option>
+                <option>Timun</option>
+                <option>Semangka</option>
+            </select>
+
+            <!-- selector menggunakan attribute id -->
+            <h1 id="h1biru" class="garisbawah">Catatan</h1>
+            <h1 class="garisbawah">Lampiran</h1>
+
+            <!-- tombol -->
+            <button type="button">Login</button>
+        </form>
+    </body>
+
+</html>
